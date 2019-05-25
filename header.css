@@ -1,0 +1,53 @@
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background:red;
+}
+
+
+header .logo img {
+    max-width: 100px;
+  }
+
+/* nav */
+.nav-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 7px 0;
+    background:black;
+    display: flex;
+    justify-content: space-between;  /*between content is space */
+    align-items: center;
+}
+
+/* li's */
+nav.nav-wrapper ul li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-bottom: 0;
+  }
+/* links on menu */
+  nav.nav-wrapper ul li a {               
+    font-size: 17px;
+    line-height: 22px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;             /* mouse over text is coursor */
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  nav.nav-wrapper ul li a:hover {
+    border-bottom: 1px solid white;
+
+  }
