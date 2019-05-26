@@ -3,6 +3,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+body.scroll header.sticky {             /* only whe body scroll 350px, we put this feature to heaer sticky */
+    -webkit-transform: translateY(0);  /* safari,chrome */
+            transform: translateY(0);
+            
+  }
+
 h1 {
     font-family: 'Oswald', sans-serif;
 }
@@ -10,6 +16,19 @@ h1 {
 header {
     background:red;
 }
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: green;
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 5;
+  }
 
 
 header .logo img {
